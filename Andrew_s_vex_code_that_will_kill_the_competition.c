@@ -1,22 +1,22 @@
 bool clawclose=false;
 bool clawopen=false;
-// need to return functions!!!!
+
 void get_controls()
 {
 	if (vexRT[Btn6D] == 1) {
-		bool clawclose = true;
+		clawclose = true;
 		} else {
-		bool clawclose = false;
+		clawclose = false;
 	}
 	if (vexRT[Btn6U] == 1) {
-		bool clawopen = true;
+		clawopen = true;
 		} else {
-		bool clawopen = false;
+		clawopen = false;
 	}
-	if (vexRT[Btn6U] == 1) {
+	if (clawopen == true) {
 		motor[port4]=127;
 		motor[port7]=127;
-		} else if (vexRT[Btn6D] == 1) {
+		} else if (clawclose == true) {
 		motor[port4]=-127;
 		motor[port7]=-127;
 	} else {
@@ -27,5 +27,8 @@ void get_controls()
 
 task main()
 {
+	do {
 	get_controls();
+}
+	while(1);
 }
