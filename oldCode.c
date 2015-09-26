@@ -16,7 +16,7 @@ void UDrive()
 	motor(LeftBaseFront) = vexRT(Ch3);
 	motor(LeftBaseBack) = vexRT(Ch3);
 	motor(RightBaseBack) = vexRT(Ch3);
-	motor(RightBaseFront) = vexRT(Ch3);
+	motorRightBaseFront) = vexRT(Ch3);
 
 	//turning
 	if(vexRT(Ch1) < 0)
