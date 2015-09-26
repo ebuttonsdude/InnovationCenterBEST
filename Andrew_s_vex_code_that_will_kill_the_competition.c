@@ -5,7 +5,7 @@ task main()
 }
 
 void get_controls() {
-		if (vexRT[Btn6D] == 1) {
+	if (vexRT[Btn6D] == 1) {
 		bool clawclose = true;
 		} else {
 		bool clawclose = false;
@@ -18,7 +18,8 @@ void get_controls() {
 	if (clawopen == true) {
 		motor[port4]=127;
 		motor[port7]=127;
-	} else if (clawclose == true) {
+		} else if (clawclose == true) {
 		motor[port4]=-127;
 		motor[port7]=-127;
+	}
 }
