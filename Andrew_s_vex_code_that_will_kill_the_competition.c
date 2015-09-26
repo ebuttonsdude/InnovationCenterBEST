@@ -1,7 +1,8 @@
 
 task main()
 {
-	get_controls();
+	get_controls()
+	motorz()
 }
 
 void get_controls() {
@@ -15,6 +16,9 @@ void get_controls() {
 		} else {
 		bool clawopen = false;
 	}
+}
+
+void motorz() {
 	if (clawopen == true) {
 		motor[port4]=127;
 		motor[port7]=127;
