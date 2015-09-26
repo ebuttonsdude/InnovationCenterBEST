@@ -1,8 +1,8 @@
 
 task main()
 {
-	get_controls()
-	motorz()
+	get_controls();
+	motorz();
 }
 
 void get_controls() {
